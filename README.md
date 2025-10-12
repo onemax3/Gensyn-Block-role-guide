@@ -54,7 +54,7 @@ If you already have a powerful GPU (RTX 3060 or higher):
 2. Run the BlockAssist installation command:
 
 ```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/HustleAirdrops/Gensyn-Block-Role-Guide/main/block.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/HustleAirdrops/Gensyn-Block-Role-Guide/main/block.sh)```
 
 ## 3. When prompted, type y and press Enter.
 
