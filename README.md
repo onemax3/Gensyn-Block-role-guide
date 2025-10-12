@@ -43,8 +43,7 @@ Once configured:
 - Go to **Services → HTTP Service Link →** open your desktop session.  
 - Wait for the window to load (can lag for a few seconds).  
 - Click **Start → Konsole (terminal)**.
-
----
+- 
 
 ### Option B: Use Your Own GPU (Local Setup)
 
@@ -53,7 +52,8 @@ If you already have a powerful GPU (RTX 3060 or higher):
 1. Open your **Terminal (Linux/Mac)** or **PowerShell (Windows)**.  
 2. Run the BlockAssist installation command:
 
- ``` bash <(curl -fsSL https://raw.githubusercontent.com/HustleAirdrops/Gensyn-Block-Role-Guide/main/block.sh)**
+ ```bash
+bash <(curl -fsSL https://raw.githubusercontent.com/HustleAirdrops/Gensyn-Block-Role-Guide/main/block.sh)
 
 
 3. When prompted, type y and press Enter.
