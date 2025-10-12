@@ -1,6 +1,6 @@
 # Gensyn BlockAssist — Complete Step-by-Step Guide (GPU + OctaSpace Users)
 
-Welcome to the professional guide to deploy **BlockAssist** and earn your **BLOCK role** in the Gensyn Discord.  
+Welcome to the simplest guide to deploy **BlockAssist** and earn your **BLOCK role** in the Gensyn Discord.  
 Follow these simple steps carefully — whether you’re using your own GPU or **OctaSpace Cloud GPU**, you’ll be verified and get the role in 5minutes.
 
 ### Recommended Node Specs
