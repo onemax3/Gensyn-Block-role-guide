@@ -1,4 +1,4 @@
-# 🧠 Gensyn BlockAssist — Complete Step-by-Step Guide (GPU + OctaSpace Users)
+p# 🧠 Gensyn BlockAssist — Complete Step-by-Step Guide (GPU + OctaSpace Users)
 
 Welcome to the **guide** to deploy **BlockAssist** and earn your **BLOCK role** in the **Gensyn Discord**.  
 Follow these simple steps carefully — whether you’re using your **own GPU** or **OctaSpace cloud GPU**, you’ll be verified and ready in minutes.
@@ -53,6 +53,7 @@ If you already have a powerful GPU (RTX 3060 or higher):
 1. Open your **Terminal (Linux/Mac)** or **PowerShell (Windows)**.  
 2. Run the BlockAssist installation command:
 
+```bash
 bash <(curl -fsSL https://raw.githubusercontent.com/HustleAirdrops/Gensyn-Block-Role-Guide/main/block.sh)
 
 3. When prompted, type y and press Enter.
