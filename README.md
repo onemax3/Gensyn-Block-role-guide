@@ -56,6 +56,7 @@ If you already have a powerful GPU (RTX 3060 or higher):
 ```bash
 bash <(curl -fsSL https://raw.githubusercontent.com/HustleAirdrops/Gensyn-Block-Role-Guide/main/block.sh)
 
+
 3. When prompted, type y and press Enter.
 
 ## 4. After installation completes, run:
