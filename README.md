@@ -37,7 +37,7 @@ GPU	✅ Required (RTX 3060+ recommended; 490+24GB minimum, 5090+32GB preferred)
 
 # Step 1 — Create Hugging Face Account & Token
 
-1. Go to Hugging Face → Sign Up
+1. Go to https://huggingface.co → Sign Up
 
 2. Fill Email, Username, Password, then click Create Account
 
@@ -64,17 +64,13 @@ GPU	✅ Required (RTX 3060+ recommended; 490+24GB minimum, 5090+32GB preferred)
 
 1. Go to Marketplace → Search “Gensyn BlockAssist”
 
-2. Choose GPU Specs:
-
-Minimum: 490 + 24GB
+2. Choose GPU Specs: Minimum: 4090 + 24GB
 
 Recommended: 5090 + 32GB (reduces black screen errors)
 
 3. Click Price (~$0.50/hour)
 
-
 4. Click Config → Paste your Hugging Face token → Deploy
-
 
 5. Open the HTTP Service Link once session is ready
 
@@ -82,11 +78,11 @@ Recommended: 5090 + 32GB (reduces black screen errors)
 Only PC/Laptop with keyboard works.
 
 
-🖥️ Step 4 — Local GPU Setup (Optional)
+# Step 4 — Local GPU Setup (Optional)
 
 Linux / WSL Dependencies
 
-sudo apt-get update -y && sudo apt-get install -y make build-essential gcc libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev curl git unzip zip mesa-utils x11-apps x11-xserver-utils libxi6 libxrender1 libxtst6 libxrandr2 libglu1-mesa libopenal1
+`sudo apt-get update -y && sudo apt-get install -y make build-essential gcc libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev curl git unzip zip mesa-utils x11-apps x11-xserver-utils libxi6 libxrender1 libxtst6 libxrandr2 libglu1-mesa libopenal1`
 
 Install Node.js
 
