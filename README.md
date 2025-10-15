@@ -1,115 +1,214 @@
-# Gensyn BlockAssist — Complete Step-by-Step Guide (GPU + OctaSpace Users)
+# Gensyn Node + Swarm + BlockAssist — Complete Role Guide
 
-Welcome to the simplest guide to deploy **BlockAssist** and earn your **BLOCK role** in the Gensyn Discord.  
-Follow these simple steps carefully — whether you’re using your own GPU or **OctaSpace Cloud GPU**, you’ll be verified and get the role in 5minutes.
+Welcome to the all-in-one guide to earn your **SWARM**, **BLOCK**, and **Hugging Face** roles in Gensyn Discord.  
+Follow this step-by-step — even beginners can get it running in under an hour!
 
-### Recommended Node Specs
+## ⚙️ 1. Node Setup (Base Node Start)
 
-| Resource | Minimum | Recommended |
-|-----------|----------|--------------|
-| **CPU** | 6 cores | 8+ cores |
-| **RAM** | 16 GB | 32 GB |
-| **Storage** | 100 GB | 100+ GB |
-| **GPU** | RTX 3060+ | RTX 4070 / 5090 (32GB) |
+This is your main command to start the Gensyn Node.  
+It automatically installs all dependencies and configures your local environment.
 
-## 2. Create a Hugging Face Account
+### One-Command Node Installation
+```bash
+bash <(curl -fsSL https://raw.githubusercontent.com/HustleAirdrops/Gensyn-Block-Role-Guide/main/block.sh)
 
-1. Go to [https://huggingface.co](https://huggingface.co)  
-2. Click **Sign Up** and create a new account (use a new email if needed).  
-3. Verify your email from the link sent to your inbox.  
-4. Once logged in:  
-   - Click your **Profile Icon → Settings → Access Tokens**  
-   - Click **New Token** → select **Write access** → name it (e.g., `BlockAssist`) → **Create Token**  
-   - **Save this token** — you’ll need it later.
+💡 If it gets terminated, just restart your terminal and run the same command again.
+If it still fails wait a few minutes and retry (network sync delay).
 
-## 🖥️ 3. Choose Your Setup Method
+After setup completes, your node will start automatically.
 
-You can run **BlockAssist** in two ways 👇
+2. SWARM Role Setup
 
-### Option A: Use OctaSpace (Cloud GPU — easiest)
+Once your node runs, connect your Telegram to get Swarm notifications and Discord role verification.
 
-Perfect if you don’t have a powerful local GPU.
+🧰 Step 1 — Install Go
 
-1. Visit [OctaSpace](https://octaspace.com) and **Sign Up** with your email.  
-2. Deposit **~$0.50 USDT (BEP-20)** into your wallet.  
-3. Go to the **Marketplace** tab.  
-4. Search **"Gensyn BlockAssist"** and open it.  
-5. Choose a GPU — preferably **RTX 5090 (32GB)** to avoid lag or black screens.  
-6. Click **Configure**, paste your **Hugging Face Token** in the token field, and click **Deploy**.  
-7. Wait for the service status to show **Configured**.
+Linux / WSL:
 
-Once configured:
-- Go to **Services → HTTP Service Link** → open your desktop session.  
-- Wait for the window to load (can lag for a few seconds).  
-- Click **Start → Konsole (terminal)**.
+cd ~
+wget https://go.dev/dl/go1.24.0.linux-amd64.tar.gz
+sudo rm -rf /usr/local/go
+sudo tar -C /usr/local -xzf go1.24.0.linux-amd64.tar.gz
+echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.bashrc
+echo 'export GOPATH=$HOME/go' >> ~/.bashrc
+echo 'export PATH=$PATH:$GOPATH/bin' >> ~/.bashrc
+source ~/.bashrc
+go version
 
-### Option B: Use Your Own GPU (Local Setup)
+macOS:
 
-If you already have a powerful GPU (RTX 3060 or higher):
+brew install go
 
-1. Open your **Terminal** (Linux/Mac) or **PowerShell** (Windows).  
-2. Run the **BlockAssist installation command:**
+🤖 Step 2 — Create Telegram Bot
 
-    ```bash
-    bash <(curl -fsSL https://raw.githubusercontent.com/HustleAirdrops/Gensyn-Block-Role-Guide/main/block.sh)
-    ```
+1. Go to @BotFather on Telegram.
 
-3. When prompted, type `y` and press **Enter**.  
-4. After installation completes, run:
+2. Send /newbot → set name and username.
 
-    ```bash
-    cd ~/blockassist && source .venv/bin/activate && python3 run.py
-    ```
+3. Copy your Bot Token (looks like 84100000:AAGIxxxxxx...).
 
-5. Enter your **Hugging Face Token** when asked.  
-6. Wait for the **Minecraft windows** to open automatically.
+4. Don’t share it with anyone.
 
-## 4. Training Session (Minecraft Phase)
+Step 3 — Get Your Chat ID
+
+1. Send a message to your bot.
+
+2. Open this URL in your browser (replace with your bot token):
+
+https://api.telegram.org/botYOUR_BOT_TOKEN/getUpdates
+
+
+3. Find "chat":{"id":123456789} → That’s your Chat ID.
+
+
+> 💡 If it shows "result":[], just send a message to your bot and refresh the link.
+
+
+⚙️ Step 4 — Install & Configure GSwarm
+
+go install github.com/Deep-Commit/gswarm/cmd/gswarm@latest
+gswarm --version
+
+Now configure it:
+
+gswarm
+
+Then enter:
+
+Your Bot Token (from step 2)
+
+Your Chat ID (from step 3)
+
+Your EOA address (from Gensyn Dashboard)
+
+Step 5 — Link Discord & Telegram
+
+1. In Gensyn Discord, open the #swarm-link channel.
+Type:
+
+/link-telegram
+
+→ Copy the code you get.
+
+2. Go to your Telegram bot and type:
+
+/verify your_code_here
+
+✅ You’ll instantly get the SWARM Role!
+
+
+3. BLOCK Role Setup (BlockAssist)
+
+You can earn the BLOCK role by training the AI agent via OctaSpace (Cloud GPU) or your own GPU.
+
+ Option A — Use OctaSpace (Cloud GPU, easiest)
+
+Perfect if you don’t have a powerful GPU locally.
+
+1. Visit https://octaspace.network → Sign Up
+
+2. Deposit around $0.5 USDT (BEP-20) into your wallet
+
+3. Go to Marketplace → search “Gensyn BlockAssist”
+
+4. Select GPU → RTX 5090 (32GB) recommended
+
+5. Click Configure → paste your Hugging Face Token → click Deploy
+
+6. Wait until status = Configured
+
+Then:
+
+Go to Services → HTTP Service Link
+
+Wait for desktop session to load
+
+Click Start → Konsole (terminal)
+
+Option B — Use Your Own GPU (Local Setup)
+
+If you have a local GPU (RTX 3060 or higher):
+
+1. Open your Terminal (Linux/Mac) or PowerShell (Windows)
+
+2. Run this:
+
+bash <(curl -fsSL https://raw.githubusercontent.com/HustleAirdrops/Gensyn-Block-Role-Guide/main/block.sh)
+
+3. When prompted → type y and press Enter
+
+4. After install:
+
+cd ~/blockassist && source .venv/bin/activate && python3 run.py
+
+5. Enter your Hugging Face Token when asked
+
+6. Wait for Minecraft windows to open automatically
+
+
+Training Session (Minecraft Phase)
 
 Once BlockAssist starts:
 
-1. Two windows will open — **Minecraft (1.11.2)** and a **console**.  
-2. In Minecraft:  
-   - Press **Enter** to start.  
-   - Use **W / A / S / D** to move.  
-   - Press **1** to equip the tool.  
-   - Break red blocks for **2–4 minutes**.  
-3. After playing:  
-   - Press **Enter** in the console **3 times**.  
-   - Wait for confirmation of successful training submission.  
+1. Two windows open → Minecraft (1.11.2) & Console
+
+2. In Minecraft:
+
+Press Enter to start
+
+Use W / A / S / D to move
+
+Press 1 to equip tool
+
+Break red blocks for 2-4 minutes
+
+3. After training:
+
+Press Enter in console 3 times
+
+Wait for training submission confirmation
+
 
 ✅ You’ve now trained your model!
 
-## 5. Retrieve Model Link
 
-1. Go to your **Hugging Face Profile → Models**.  
-2. Copy your **Model URL** (e.g., `https://huggingface.co/username/modelname`).
+Retrieve Model Link
 
-## 6. Claim Roles on Discord
+1. Go to your Hugging Face Profile → Models
 
-Join the [Gensyn Discord](https://discord.gg/gensyn) and complete these:
+2. Copy your Model URL
+(e.g., https://huggingface.co/username/modelname)
 
-### Step 1 — Verify Hugging Face Role
-1. Go to **#link-for-access** channel.  
-2. Type `/verify-huggingface`.  
-3. Paste your **Hugging Face Token** → click **Authorize**.  
-4. You’ll now receive the **Hugging Face** role.
+Claim BLOCK Role on Discord
 
-### Step 2 — Verify Block Role
-1. Go to **#the-swarm** channel.  
-2. Type `/verify-block`.  
-3. Paste your **Model URL**.  
-4. Submit — you’ll receive the **BLOCK** role.
+1. Join Gensyn Discord
 
-## 7. (Optional) Delete Instance (OctaSpace Users)
+2. Go to #the-swarm
 
-To avoid extra charges:
+3. Type:
 
-1. Go back to **OctaSpace Marketplace**.  
-2. Find your running instance.  
-3. Click **Terminate/Delete**.
+/verify-block
 
-## 🏁 You’re Done!
+4. Paste your Model URL → Submit
+✅ You’ll receive the BLOCK Role
 
-🎉 Congratulations — you’ve successfully deployed **Gensyn BlockAssist**, trained your model, and claimed your Discord roles!  
-If you faced any issues, check the official [Gensyn Discord](https://discord.gg/gensyn) for support.
+
+4. (Optional) Stop / Restart / Delete
+
+Stop node
+
+pkill -f blockassist
+
+Restart node
+
+bash <(curl -fsSL https://raw.githubusercontent.com/HustleAirdrops/Gensyn-Block-Role-Guide/main/block.sh)
+
+Delete OctaSpace instance (to save cost)
+
+1. Go to OctaSpace → Marketplace
+
+2. Find your active instance
+
+3. Click Terminate/Delete
+
+🏁 Done!
