@@ -78,7 +78,7 @@ Recommended: 5090 + 32GB (reduces black screen errors)
 Only PC/Laptop with keyboard works.
 
 
-# Step 4 — Local GPU Setup (Optional)
+# Step 4 — Setup (for local gpu)
 
 Linux / WSL Dependencies
 
