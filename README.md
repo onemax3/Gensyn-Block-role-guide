@@ -51,7 +51,7 @@ GPU	✅ Required (RTX 3060+ recommended; 490+24GB minimum, 5090+32GB preferred)
 
 # Step 2 — Create OctaSpace Account & Deposit
 
-1. Go to OctaSpace → Sign Up
+1. Go to https://octa.space?ref=rwjEuHXZwZC → Sign Up
 
 2. Confirm email and login
 
@@ -62,7 +62,7 @@ GPU	✅ Required (RTX 3060+ recommended; 490+24GB minimum, 5090+32GB preferred)
 
 # Step 3 — Deploy BlockAssist on OctaSpace
 
-1. Go to Marketplace → Search “Gensyn BlockAssist”
+1. Go to https://marketplace.octa.space/ → Search “Gensyn BlockAssist”
 
 2. Choose GPU Specs: Minimum: 4090 + 24GB
 
