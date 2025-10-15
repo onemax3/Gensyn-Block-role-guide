@@ -82,15 +82,17 @@ Only PC/Laptop with keyboard works.
 
 Linux / WSL Dependencies
 
-```Bash
+```bash
 sudo apt-get update -y && sudo apt-get install -y make build-essential gcc libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev curl git unzip zip mesa-utils x11-apps x11-xserver-utils libxi6 libxrender1 libxtst6 libxrandr2 libglu1-mesa libopenal1
 ```
 
-Install Node.js
+**Install Node.js**
 
+```bash
 curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
 sudo apt update && sudo apt install -y nodejs
 node -v
+```
 
 Clone Repository
 
