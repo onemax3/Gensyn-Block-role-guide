@@ -86,7 +86,7 @@ Linux / WSL Dependencies
 sudo apt-get update -y && sudo apt-get install -y make build-essential gcc libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev curl git unzip zip mesa-utils x11-apps x11-xserver-utils libxi6 libxrender1 libxtst6 libxrandr2 libglu1-mesa libopenal1
 ```
 
-# Install Node.js
+**Install Node.js**
 
 ```bash
 curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
@@ -94,14 +94,14 @@ sudo apt update && sudo apt install -y nodejs
 node -v
 ```
 
-# Clone Repository
+**Clone Repository**
 
 ```bash
 git clone https://github.com/gensyn-ai/blockassist.git
 cd blockassist
 ```
 
-# Install Java (Minecraft required)
+**Install Java (Minecraft required)**
 
 
 ```bash
@@ -125,57 +125,45 @@ pyenv install 3.10
 pip install psutil readchar rich
 ```
 
-## Start Node (Local GPU Mode)
+ **Start Node (Local GPU Mode)**
 
+```bash
 cd ~/blockassist
 source .venv/bin/activate
 python3 run.py
+```
 
 > Re-run command if session stops or closes.
 
 
-
-
----
-
-🎮 Step 5 — Minecraft Gameplay Training
+# Step 5 — Minecraft Gameplay Training
 
 1. Open Minecraft inside BlockAssist session
 
-
 2. Press Enter → Console opens
-
 
 3. Set Full Screen + 144 FPS
 
-
 4. Press 1 → Equip hammer, use W/A to move
-
 
 5. Break 1–2 red blocks for 3–4 minutes
 
-
 6. Press Enter multiple times → Then ESC to exit
-
 
 
 > BlockAssist learns your actions during gameplay.
 
 
+# Step 6 — Discord Role Verification
 
-
----
-
-✅ Step 6 — Discord Role Verification
-
-Hugging Face Role
+**Hugging Face Role**
 
 /verify huggingface
 
 Click the link → Authorize → Role added
 
 
-Block Role
+**Block Role**
 
 /verify block
 
@@ -185,48 +173,18 @@ Copy your BlockAssist profile URL → Paste → Submit → Role added
 > Both roles are required for full access to Gensyn ecosystem.
 
 
-
-
----
-
-🧹 Step 7 — Cleanup
+# Step 7 — Cleanup
 
 After gameplay, go to OctaSpace marketplace → Delete/Terminate your instance to avoid extra charges.
 
 
-
----
-
-💡 Tips
+# Tips
 
 Use high-spec GPU (5090 + 32GB) for smooth operation
 
-Only PC/Laptop users can operate BlockAssist
-
-Cost: ~$0.34/hour on OctaSpace
+Cost: ~$0.50/hour on OctaSpace
 
 Follow every step exactly — missing roles prevent proper setup
 
-Keyboard is mandatory; phone-only setups won’t work
 
-
-
----
-
-🎯 Congratulations!
-
-BlockAssist is now set up, trained, and integrated with Discord roles.
-You can now enjoy your AI-powered Minecraft assistant and Gensyn ecosystem features.
-
-
----
-
-✅ All commands and instructions are copy-paste ready for GitHub.
-
-
----
-
-If you want, I can also make a “Quick Commands Section” at the very bottom, where all the commands (Linux install, Python, Git, run.py, etc.) are together in one block, so users can just copy everything in one go.
-
-Do you want me to do that next?
-
+## Congratulations!
