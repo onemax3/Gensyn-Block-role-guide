@@ -9,6 +9,7 @@ This is your main command to start the Gensyn Node.
 It automatically installs all dependencies and configures your local environment.
 
 ### One-Command Node Installation
+
 ```bash
     cd ~/blockassist && source .venv/bin/activate && python3 run.py
     ```
