@@ -36,9 +36,7 @@ libxmlsec1-dev libffi-dev liblzma-dev curl git unzip zip mesa-utils x11-apps x11
 libxi6 libxrender1 libxtst6 libxrandr2 libglu1-mesa libopenal1
 ```
 
----
-
-🧩 Step 2 — Install Node.js
+## Step 2 — Install Node.js
 
 curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash - && sudo apt update && sudo apt install -y nodejs
 node -v
