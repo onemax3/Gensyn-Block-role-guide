@@ -47,6 +47,7 @@ GPU	✅ Required (RTX 3060+ recommended; 490+24GB minimum, 5090+32GB preferred)
 
 5. Name it BlockAssist, select Write, copy and save the token
 
+
 > This token will be used later for BlockAssist deployment.
 
 # Step 2 — Create OctaSpace Account & Deposit
@@ -57,8 +58,8 @@ GPU	✅ Required (RTX 3060+ recommended; 490+24GB minimum, 5090+32GB preferred)
 
 3. Deposit ~0.50 USDT (BEP-20) 
 
-> This is a low-cost investment to run BlockAssist in the cloud.
 
+> This is a low-cost investment to run BlockAssist in the cloud.
 
 # Step 3 — Deploy BlockAssist on OctaSpace
 
@@ -74,13 +75,12 @@ Recommended: 5090 + 32GB (reduces black screen errors)
 
 5. Open the HTTP Service Link once session is ready
 
-> Wait for desktop session to fully load.
-Only PC/Laptop with keyboard works.
 
+> Wait for desktop session to fully load.
 
 # Step 4 — Setup (for local gpu)
 
-Linux / WSL Dependencies
+**Linux / WSL Dependencies**
 
 ```bash
 sudo apt-get update -y && sudo apt-get install -y make build-essential gcc libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev curl git unzip zip mesa-utils x11-apps x11-xserver-utils libxi6 libxrender1 libxtst6 libxrandr2 libglu1-mesa libopenal1
@@ -133,8 +133,8 @@ source .venv/bin/activate
 python3 run.py
 ```
 
-> Re-run command if session stops or closes.
 
+> Re-run command if session stops or closes.
 
 # Step 5 — Minecraft Gameplay Training
 
@@ -152,7 +152,6 @@ python3 run.py
 
 
 > BlockAssist learns your actions during gameplay.
-
 
 # Step 6 — Discord Role Verification
 
@@ -172,11 +171,9 @@ Copy your BlockAssist profile URL → Paste → Submit → Role added
 
 > Both roles are required for full access to Gensyn ecosystem.
 
-
 # Step 7 — Cleanup
 
 After gameplay, go to OctaSpace marketplace → Delete/Terminate your instance to avoid extra charges.
-
 
 # Tips
 
