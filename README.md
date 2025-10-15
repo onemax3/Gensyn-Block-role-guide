@@ -23,7 +23,6 @@ This guide walks you through everything — from setup to training — whether y
 | GPU | ✅ Required (RTX 3060 or higher recommended) |
 | VPS | ❌ Not supported (CPU-only VPS won’t work) |
 
----
 
 ## 🧰 Step 1 — Install Dependencies
 
@@ -38,5 +37,5 @@ libxi6 libxrender1 libxtst6 libxrandr2 libglu1-mesa libopenal1
 
 ## Step 2 — Install Node.js
 
-curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash - && sudo apt update && sudo apt install -y nodejs
+`curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash - && sudo apt update && sudo apt install -y nodejs
 node -v
