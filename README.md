@@ -12,7 +12,7 @@ It automatically installs all dependencies and configures your local environment
 
 ```bash
     cd ~/blockassist && source .venv/bin/activate && python3 run.py
-    ```
+        ```
 
 💡 If it gets terminated, just restart your terminal and run the same command again.
 If it still fails wait a few minutes and retry (network sync delay).
